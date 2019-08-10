@@ -1,0 +1,16 @@
+function a() {
+        echo "function $FUNCNAME, line $LINENO"
+}
+
+# env variables
+EPOCHSECONDS
+EUID
+FUNCNAME
+GROUPS
+LINENO
+RANDOM
+
+# reference
+a=a
+declare -n b=a
+b is now a reference to a
