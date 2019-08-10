@@ -15,3 +15,9 @@ RANDOM
 a=a
 declare -n b=a
 b is now a reference to a
+
+# Arrays
+declare -a array_a
+declare -b array_b
+array_a=(a)
+array_b+=($a{[@]})
