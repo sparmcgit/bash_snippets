@@ -1,8 +1,9 @@
+# A function the returns it's name and line number
 function a() {
         echo "function $FUNCNAME, line $LINENO"
 }
 
-# env variables
+# Env variables
 EPOCHSECONDS
 EUID
 FUNCNAME
@@ -10,7 +11,7 @@ GROUPS
 LINENO
 RANDOM
 
-# reference
+# References
 a=a
 declare -n b=a
 b is now a reference to a
