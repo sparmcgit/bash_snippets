@@ -1,7 +1,7 @@
 # the name of the script
 SCRIPTNAME=$(basename $0)
 
-# A function the returns it's name and line number
+# A function that returns it's name and line number
 function a() {
         echo "function $FUNCNAME, line $LINENO"
 }
