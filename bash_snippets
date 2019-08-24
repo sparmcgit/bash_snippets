@@ -26,4 +26,5 @@ array_a=(a)
 array_b+=($a{[@]})
 
 # Execute a script from internet
-wget -qO - http://path/to/script | bash
+wget -qO - http://path/to/script | bash -s arg1 arg2
+curl -s http://path/to/script | bash -s arg1 arg2
