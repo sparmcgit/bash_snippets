@@ -25,6 +25,19 @@ declare -b array_b
 array_a=(a)
 array_b+=($a{[@]})
 
+# sorted array
+IFS=$'\n' sorted=($(sort <<<"${array[*]}"));unset IFS
+
+# create multiple associative arrays
+for array in array1 array2 array3
+do
+    declare -A $array
+    declare -n ref=${array}
+
+    ref["key1"]="a""
+    ref["key2"]="b""
+done
+
 # Execute a script from internet
 wget -qO - http://path/to/script | bash -s arg1 arg2
 curl -s http://path/to/script | bash -s arg1 arg2
